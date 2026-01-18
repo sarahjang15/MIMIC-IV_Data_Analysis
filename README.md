@@ -37,9 +37,9 @@ MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원�
 |--------|------|----------|
 | `patients.csv` | 환자 기본 정보 (인구통계학적 데이터) | `subject_id`, `gender`, `anchor_age`, `dod` |
 | `patient_admissions.csv` | 입원 기록 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `urgency_level`, `primary_diagnosis_code` |
-| `patient_discharges.csv` | 퇴원 정보 | `patient_id`, `admission_id`, `discharge_timestamp`, `discharge_status` |
+| `patient_discharges.csv` | 퇴원 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `discharge_timestamp`, `discharge_status` |
 | `patient_transfers.csv` | 환자 전원 기록 (병동 간 이동) | `patient_id`, `admission_id`, `department`, `transfer_in_timestamp`, `transfer_out_timestamp` |
-| `d_icd_diagnoses.csv` | ICD 진단 코드 사전 | `icd_code`, `icd_version`, `long_title` |
+| `d_icd_diagnoses.csv` | ICD-9 진단 코드 사전 | `icd9_code`, `icd_version`, `long_title` |
 
 ### 데이터 출처
 
