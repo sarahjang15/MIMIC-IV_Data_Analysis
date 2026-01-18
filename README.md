@@ -53,16 +53,16 @@ MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원�
 본 데이터를 사용할 경우 다음 논문을 인용해주세요:
 
 ```
-Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). 
-MIMIC-IV Clinical Database Demo (version 2.2). 
-PhysioNet. https://doi.org/10.13026/dp1f-ex47
+Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset.
+Sci Data 10, 1 (2023).
+https://doi.org/10.1038/s41597-022-01899-x
 ```
 
 ## 📚 참고 자료
 
 - [MIMIC-IV 공식 웹사이트](https://mimic.mit.edu)
 - [PhysioNet MIMIC-IV Demo 페이지](https://physionet.org/content/mimic-iv-demo/2.2/hosp/#files-panel)
-- [MIMIC-IV 논문](https://doi.org/10.13026/s6n6-xd98)
+- [MIMIC-IV 논문]([https://doi.org/10.13026/s6n6-xd98](https://www.nature.com/articles/s41597-022-01899-x))
 
 ## ⚠️ 주의사항
 
