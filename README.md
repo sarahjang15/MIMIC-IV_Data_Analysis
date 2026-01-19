@@ -29,7 +29,8 @@ MIMIC-IV Clinical Database Demo를 활용한 데이터 분석 프로젝트입니
 
 본 프로젝트에서 사용하는 데이터는 [MIMIC-IV Clinical Database Demo v2.2](https://physionet.org/content/mimic-iv-demo/2.2/hosp/#files-panel)에서 가져온 것입니다.
 
-MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원한 환자들의 비식별화된 건강 관련 데이터를 포함하는 대규모 공개 데이터베이스입니다. Demo 버전은 전체 데이터베이스의 구조와 내용을 검토할 수 있도록 100명의 환자 데이터로 구성된 샘플 데이터셋입니다.
+MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원한 환자들의 비식별화된 건강 관련 데이터를 포함하는 대규모 공개 데이터베이스입니다. 
+Demo 버전은 전체 데이터베이스의 구조와 내용을 검토할 수 있도록 100명의 환자 데이터로 구성된 오픈 소스 데이터셋입니다.
 
 ### 데이터 파일 설명
 
@@ -37,35 +38,27 @@ MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원�
 |--------|------|----------|
 | `patients.csv` | 환자 기본 정보 (인구통계학적 데이터) | `subject_id`, `gender`, `anchor_age`, `dod` |
 | `patient_admissions.csv` | 입원 기록 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `urgency_level`, `primary_diagnosis_code` |
-| `patient_discharges.csv` | 퇴원 정보 | `patient_id`, `admission_id`, `discharge_timestamp`, `discharge_status` |
+| `patient_discharges.csv` | 퇴원 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `discharge_timestamp`, `discharge_status` |
 | `patient_transfers.csv` | 환자 전원 기록 (병동 간 이동) | `patient_id`, `admission_id`, `department`, `transfer_in_timestamp`, `transfer_out_timestamp` |
-| `d_icd_diagnoses.csv` | ICD 진단 코드 사전 | `icd_code`, `icd_version`, `long_title` |
-
-### 데이터 출처
-
-- **원본 데이터베이스**: MIMIC-IV Clinical Database Demo v2.2
-- **제공 기관**: PhysioNet
-- **DOI**: [10.13026/dp1f-ex47](https://doi.org/10.13026/dp1f-ex47)
-- **라이선스**: Open Data Commons Open Database License v1.0
+| `d_icd_diagnoses.csv` | ICD-9 진단 코드 사전 | `icd9_code`, `icd_version`, `long_title` |
 
 ### 인용 방법
 
 본 데이터를 사용할 경우 다음 논문을 인용해주세요:
 
 ```
-Johnson, A., Bulgarelli, L., Pollard, T., Horng, S., Celi, L. A., & Mark, R. (2023). 
-MIMIC-IV Clinical Database Demo (version 2.2). 
-PhysioNet. https://doi.org/10.13026/dp1f-ex47
+Johnson, A.E.W., Bulgarelli, L., Shen, L. et al. MIMIC-IV, a freely accessible electronic health record dataset.
+Sci Data 10, 1 (2023). https://doi.org/10.1038/s41597-022-01899-x
 ```
 
 ## 📚 참고 자료
 
 - [MIMIC-IV 공식 웹사이트](https://mimic.mit.edu)
 - [PhysioNet MIMIC-IV Demo 페이지](https://physionet.org/content/mimic-iv-demo/2.2/hosp/#files-panel)
-- [MIMIC-IV 논문](https://doi.org/10.13026/s6n6-xd98)
+- [MIMIC-IV 논문](https://www.nature.com/articles/s41597-022-01899-x)
 
 ## ⚠️ 주의사항
 
 - 본 데이터는 비식별화되었지만 실제 환자 데이터를 기반으로 하므로, 데이터 사용 시 관련 규정 및 윤리 가이드라인을 준수해야 합니다.
-- Demo 버전은 전체 데이터베이스의 일부 샘플이므로, 연구 목적에 따라 전체 데이터베이스 접근이 필요할 수 있습니다.
-- 전체 MIMIC-IV 데이터베이스 접근을 위해서는 PhysioNet에서 자격 인증이 필요합니다.
+- Demo 버전은 MIMIC-IV 데이터베이스의 일부 샘플이며, 전체 데이터 사용 시 Tutorial 내 코드 결과와 다를 수 있습니다.
+- 전체 MIMIC-IV 데이터 접근을 위해서는 PhysioNet에서 자격 인증이 필요합니다.
