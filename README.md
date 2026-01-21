@@ -29,7 +29,7 @@ MIMIC-IV Clinical Database Demo를 활용한 데이터 분석 프로젝트입니
 
 본 프로젝트에서 사용하는 데이터는 [MIMIC-IV Clinical Database Demo v2.2](https://physionet.org/content/mimic-iv-demo/2.2/hosp/#files-panel)에서 가져온 것입니다.
 
-MIMIC-IV는 Beth Israel Deaconess Medical Center의 중환자실(ICU)에 입원한 환자들의 비식별화된 건강 관련 데이터를 포함하는 대규모 공개 데이터베이스입니다. 
+MIMIC-IV는 Beth Israel Deaconess Medical Center에 입원한 환자들의 비식별화된 건강 관련 데이터를 포함하는 대규모 공개 데이터베이스입니다. 
 Demo 버전은 전체 데이터베이스의 구조와 내용을 검토할 수 있도록 100명의 환자 데이터로 구성된 오픈 소스 데이터셋입니다.
 
 ### 데이터 파일 설명
