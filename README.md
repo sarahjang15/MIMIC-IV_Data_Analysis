@@ -13,7 +13,7 @@ MIMIC-IV Clinical Database Demo를 활용한 데이터 분석 프로젝트입니
 
 1. GitHub 저장소 페이지에서 초록색 **Code** 버튼(우측 상단)을 클릭합니다.
 2. **Download ZIP**을 선택합니다.
-3. 다운로드한 ZIP 파일을 로컬 컴퓨터에서 압축 해제합니다.
+3. 로컬에 다운로드한 ZIP 파일을 압축 해제합니다.
 
 #### [Step 2: Colab에서 노트북 열기]
 
@@ -22,8 +22,6 @@ MIMIC-IV Clinical Database Demo를 활용한 데이터 분석 프로젝트입니
 3. **Upload** 탭을 선택하고 압축 해제한 폴더에서 튜토리얼 노트북 파일을 업로드합니다.
    - `MIMIC_IV_Tutorial.ipynb`
 4. 업로드가 완료되면 노트북이 열리며 Colab에서 바로 실행할 수 있습니다.
-
-> **참고**: 노트북을 실행하면 자동으로 GitHub에서 데이터 파일을 다운로드하여 Google Drive에 저장합니다. 별도의 데이터 업로드가 필요하지 않습니다.
 
 ## 📊 데이터 설명
 
@@ -39,7 +37,7 @@ Demo 버전은 전체 데이터베이스의 구조와 내용을 검토할 수 �
 | `patients.csv` | 환자 기본 정보 (인구통계학적 데이터) | `subject_id`, `gender`, `anchor_age`, `dod` |
 | `patient_admissions.csv` | 입원 기록 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `urgency_level`, `primary_diagnosis_code` |
 | `patient_discharges.csv` | 퇴원 정보 | `patient_id`, `admission_id`, `admission_timestamp`, `discharge_timestamp`, `discharge_status` |
-| `patient_transfers.csv` | 환자 전원 기록 (병동 간 이동) | `patient_id`, `admission_id`, `department`, `transfer_in_timestamp`, `transfer_out_timestamp` |
+| `patient_transfers.csv` | 환자 병동 간 이동 기록 | `patient_id`, `admission_id`, `department`, `transfer_in_timestamp`, `transfer_out_timestamp` |
 | `d_icd_diagnoses.csv` | ICD-9 진단 코드 사전 | `icd9_code`, `icd_version`, `long_title` |
 
 ### 인용 방법
